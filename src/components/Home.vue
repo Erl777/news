@@ -170,23 +170,19 @@ export default {
  }
  .cards-container {
    display: grid;
-   grid-template-columns: repeat(4, 270px);
+   grid-template-columns: repeat(4, 1fr);
    gap: 30px;
    row-gap: 72px;
-   @media (max-width: 1280px) {
+   @media (max-width: 1100px) {
      justify-content: center;
-     grid-template-columns: repeat(3, 270px);
+     grid-template-columns: repeat(3, 1fr);
      gap: 20px;
      row-gap: 48px;
    }
-   @media (max-width: 992px) {
-     grid-template-columns: repeat(3, 203px);
-   }
    @media (max-width: 760px) {
-     grid-template-columns: repeat(2, 203px);
+     grid-template-columns: repeat(2, 1fr);
    }
    @media (max-width: 550px) {
-     grid-template-columns: repeat(2, 143px);
      row-gap: 32px;
    }
  }

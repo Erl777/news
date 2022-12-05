@@ -38,19 +38,15 @@ export default {
 @import "src/assets/style/var";
   .card {
     &__img {
-      width: 270px;
-      height: 176px;
+      width: 100%;
       border-radius: 8px;
       margin: 0 0 16px 0;
-      @media (max-width: 992px) {
-        width: 100%;
-        height: 128px;
-      }
+      max-height: 176px;
       @media (max-width: 768px) {
-        height: 128px;
+        min-height: 128px;
       }
       @media (max-width: 550px) {
-        height: 96px;
+        min-height: 96px;
         margin: 0 0 8px;
       }
     }
